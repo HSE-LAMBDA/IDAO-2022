@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "IDAO"
+version = "0.1.0"
+description = ""
+authors = ["Abdalaziz Rashid <abdalaziz.rashid@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+pandas = "^1.3.4"
+pymatgen = "^2022.0.16"
+ase = "^3.22.1"
+tqdm = "^4.62.3"
+megnet = {version = "^1.2.9", extras = ["tensorflow with gpu"]}
+tensorflow-gpu = "^2.7.0"
+sklearn = "^0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+dvc = {extras = ["azure"], version = "^2.8.3"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
